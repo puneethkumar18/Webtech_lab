@@ -1,35 +1,36 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 20px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
-h1{
-    margin: 20px;
-    align-items: center;
+h1 {
+  margin: 20px;
+  align-items: center;
 }
 
-.header{
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-table{
-    margin-top: 50px;
-    width: 100%;
-    border-collapse: collapse;
+table {
+  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
 }
-th{
-    background-color:  #DCDCDC;
-}
- 
-.logo{
-    max-width: 400px;
-    max-height: 600px;
+th {
+  background-color: #dcdcdc;
 }
 
-th,td{
-    text-align: center;
-    border: 1px solid black;
-    height: 40px;
+.logo {
+  max-width: 400px;
+  max-height: 600px;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  height: 40px;
 }

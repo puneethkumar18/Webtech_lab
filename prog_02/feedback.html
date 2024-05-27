@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>feedback</title>
+    <style>
+        body{
+            background-color: purple;
+            color:white;
+        }
+        h1{
+            text-align:center;
+        }
+        form{
+            
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            padding-top: 50px;
+            color: white;
+            height: 400px;
+            background-color: grey  ;
+            width: 30%;
+        }
+        #rad{
+            margin-bottom: 10px;
+        }
+        textarea{
+            margin-top: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>FEEDBACK FORM</h1>
+    <form action="">
+      <input type="text" name="fname" id="rad" placeholder="Enter your Name" />
+      <input
+        type="text"
+        name="femail"
+        id="rad"
+        placeholder="Enter your email id"
+      />
+      <input type="text" name="usn" id="rad" placeholder="Enter your USN" />
+      <br>
+      <br>
+      <label for="semester">semester:</label>
+      <select name="semester" id="">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select><br><br>
+      <label for="Branch">Branch:</label>
+      <br>
+      <input type="radio" name="branch" value="IS" id="rad" >IS</input>
+      <input type="radio" name="branch" value="CS" id="rad" >CS</input>
+      <input type="radio" name="branch" value="EC" id="rad" >EC</input>
+      <br>
+      <br>
+      <input type="checkbox" checked>send the FEED-BACK to mail</input>
+      <br>
+      <br>
+      <textarea name="feedback" placeholder="Type Here" rows="5" cols="30"></textarea>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
