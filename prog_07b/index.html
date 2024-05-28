@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>From validate</title>
+    
+    </style>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var gender = document.getElementById("gender").value;
+        var color = document.getElementById("color").value;
+
+        if (name === "") {
+          alert("Please Enter your name");
+          return;
+        }
+        if (email === "") {
+          alert("Please Enter your email");
+          return;
+        }
+        if (!email.includes(".") || !email.includes("@")) {
+          alert("Enter email correctly");
+          return;
+        }
+        if (mobile === "" || mobile.length !== 10) {
+          alert("Enter mobile number properly");
+          return;
+        }
+        if (gender === "") {
+          alert("select correct gender");
+          return;
+        }
+        if (color === "") {
+          alert("select correct color");
+          return;
+        }
+        var information =
+          "Name: " +
+          name +
+          "\n" +
+          "Email: " +
+          email +
+          "\n" +
+          "Mobile No: " +
+          mobile +
+          "\n" +
+          "Gender: " +
+          gender +
+          "\n" +
+          "Favorite Color: " +
+          color;
+
+        alert("${information}");
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Form Validate</h2>
+      <form>
+        <input type="text" id="name" placeholder="Enter your name" /><br />
+        <input type="text" id="email" placeholder="Enter your email" /><br />
+        <input
+          type="text"
+          id="number"
+          placeholder="Enter your mobile Number"
+        /><br />
+        <select name="" id="gender">
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option></select
+        ><br /><br />
+        <input
+          type="text"
+          id="color"
+          placeholder="Favorite Color"
+        /><br /><br />
+        <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
